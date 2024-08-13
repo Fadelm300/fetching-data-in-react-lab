@@ -1,9 +1,6 @@
 
 
-
-
-const API_KEY = 'https://swapi.dev/api/starships';
-const BASE_URL = `http://api.weatherapi.com/v1/current.json?key=${API_KEY}`;
+const BASE_URL = 'https://swapi.dev/api/starships/';
 
 const showStarships = async () => {
     try {
@@ -16,5 +13,5 @@ const showStarships = async () => {
     }
 };
 
-
 export { showStarships };
+
