@@ -1,7 +1,6 @@
 // src/App.jsx
 import {showStarships} from './services/starshipService';
 import { useState, useEffect } from 'react';
-import './App.css'
 import StarshipSearch from './components/StarshipSearch';
 import StarshipList from './components/StarshipList';
 import './App.css';
@@ -16,8 +15,8 @@ const App = () => {
       setStarships(data.results || []);
       setFilteredStarships(data);
     };
-    fetchStarships();
-  }, []);
+    fetchStarships(); 
+     }, []);
 
   const handleSearch = (query) => {
     const filtered = starships.filter((s) =>
